@@ -10,14 +10,14 @@ import mysql.connector
 dataBase = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    passwd = 'admin'
+    passwd = 'root'
 )
 
 #prepare cursor object
 cursorObject = dataBase.cursor()
 
 #create a database
-cursorObject.execute('CREATE DATABASE syst')
+#cursorObject.execute('CREATE DATABASE syst')
 
 print("ALL DONE!")
 
